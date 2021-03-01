@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Car flower house</title>
+  </head>
+
+  <body style="background-color: lightblue">
+    <button>Start the show</button>
+    <svg width="1500" height="1000" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <g id="hill">
+        <rect width="1500" height="20" x="0" y="880" fill="darkgreen" />
+        <path d="M 0 880 C 150 850, 80 200, 1500 880" stroke="black" fill="darkgreen" />
+      </g>
+      <g id="house">
+        <rect width="600" height="400" rx="15" x="20" y="500" fill="red" />
+        <polyline points="30 500 330 250 600 500" stroke="black" fill="grey" />
+        <rect width="80" height="80" x="100" y="600" fill="turquoise" stroke="black" stroke-width="10" />
+        <rect width="80" height="80" x="200" y="600" fill="turquoise" stroke="black" stroke-width="10" />
+        <rect width="80" height="80" x="100" y="700" fill="turquoise" stroke="black" stroke-width="10" />
+        <rect width="80" height="80" x="200" y="700" fill="turquoise" stroke="black" stroke-width="10" />
+        <rect width="110" height="200" x="400" y="695" fill="brown" stroke="black" stroke-width="5" />
+      </g>
+
+      <g id="grass_and_plant">
+        <polyline
+          points="0 900, 10 890, 20 900, 30 890, 40 900, 50 890, 60 900, 70 890, 80 900, 90 890, 100 900, 110 890, 120 900, 130 890, 140 900, 150 890, 160 900, 170 890, 180 900, 190 890, 200 900, 210 890, 220 900, 230 890, 240 900, 250 890, 260 900, 270 890, 280 900, 290 890, 300 900, 310 890, 320 900, 330 890, 340 900, 350 890, 360 900, 370 890, 380 900, 390 890, 400 900, 410 890, 420 900, 430 890, 440 900, 450 890, 460 900, 470 890, 480 900, 490 890, 500 900, 510 890, 520 900, 530 890, 540 900, 550 890, 560 900, 570 890, 580 900, 590 890, 600 900, 610 890, 620 900, 630 890, 640 900, 650 890, 660 900, 670 890, 680 900, 690 890, 700 900, 710 890, 720 900"
+          stroke="green"
+          fill="green"
+        />
+        <g id="plant">
+          <rect width="10" height="200" x="645" y="700" fill="green" id="stalk" />
+          <rect width="100" height="40" rx="30" x="600" y="700" fill="yellow" id="petal1" />
+          <rect width="100" height="40" rx="30" x="600" y="700" fill="yellow" id="petal2" />
+          <rect width="100" height="40" rx="30" x="600" y="700" fill="yellow" id="petal3" />
+          <rect width="100" height="40" rx="30" x="600" y="700" fill="yellow" id="petal4" />
+          <circle cx="650" cy="720" r="40" stroke-width="10" fill="pink" />
+        </g>
+      </g>
+      <g id="car">
+        <rect width="300" height="150" rx="15" x="20" y="700" />
+        <rect width="80" height="80" rx="15" x="230" y="720" fill="blue" />
+        <circle cx="70" cy="880" r="40" stroke="black" stroke-width="10" fill="grey" />
+        <circle cx="260" cy="880" r="40" stroke="black" stroke-width="10" fill="grey" />
+        <ellipse cx="260" cy="880" rx="3" ry="30" stroke="black" stroke-width="5" fill="transparent" class="rim1" />
+        <ellipse cx="70" cy="880" rx="3" ry="30" stroke="black" stroke-width="5" fill="transparent" class="rim2" />
+        <circle cx="260" cy="880" r="10" stroke="black" stroke-width="7" fill="grey" />
+        <circle cx="70" cy="880" r="10" stroke="black" stroke-width="7" fill="grey" />
+      </g>
+    </svg>
+    <script src="script.js"></script>
+  </body>
+</html>

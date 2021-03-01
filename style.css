@@ -1,0 +1,56 @@
+#petal1 {
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    transform: rotate(0deg);
+  }
+  #petal2 {
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    transform: rotate(90deg);
+  }
+  #petal3 {
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    transform: rotate(140deg);
+  }
+  #petal4 {
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    transform: rotate(220deg);
+  }
+
+  .movethecar {
+    animation-name: movecar;
+    animation-iteration-count: 1;
+    animation-fill-mode: none;
+    animation-timing-function: ease-out;
+    animation-duration: 5s;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+  }
+
+  @keyframes movecar {
+    0% {
+      transform: translateX(-30vw);
+    }
+    100% {
+      transform: translateX(25vw);
+    }
+  }
+
+  .wheels {
+    animation-name: rollwheels;
+    animation-iteration-count: 10;
+    animation-duration: 0.5s;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+  }
+
+  @keyframes rollwheels {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
